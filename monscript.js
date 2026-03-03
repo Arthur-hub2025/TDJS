@@ -1,11 +1,12 @@
 /* Toutes les variables */
-let items = document.querySelectorAll("#listeCourses li");
+let li = document.querySelector("#listeCourses li");
 
-items.forEach(item => {
-  item.addEventListener('click', () => {
-    item.style.backgroundColor = "lightblue";
-    item.style.textDecoration = "line-through";
-  });
-});
+
+/* Tous les évènements */
+li.addEventListener('click', ()=>{
+li.classList.toggle("itemCheck");
+})
+
+
 /* Les fonctions */
 // A voir plus tard
