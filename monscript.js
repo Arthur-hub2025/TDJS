@@ -38,6 +38,11 @@ function addProduct() {
       newLi.classList.toggle("itemCheck");
     });
 
+    newLi.addEventListener('dblclick', () => {
+      liste.removeChild(newLi);
+      alert(`"${valeur}" a été supprimé !`);
+    });
+
     liste.appendChild(newLi);
     myInput.value = "";
   }
